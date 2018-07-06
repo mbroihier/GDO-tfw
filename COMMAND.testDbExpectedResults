@@ -1,0 +1,6 @@
+COMMAND-0010
+A closed garage door will open
+COMMAND-0020
+An open garage door will close
+COMMAND-0030
+The user interface status field will display "Communication Failure".

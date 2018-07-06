@@ -1,0 +1,82 @@
+<?xml version="1.0" ?><html>
+<style>
+body { background-color: white; }
+body { font-family: sans-serif; }
+li { font-size: 80%; }
+</style>
+<body>
+<table BORDER="" WIDTH="90%">
+<tr>
+<td>
+Test Case
+</td>
+<td id="testCaseId">
+DISPLAY-0010</td>
+</tr>
+<tr>
+<td>
+Title
+</td>
+<td id="title">
+Initial Android App Display</td>
+</tr>
+<tr>
+<td>
+Objective
+</td>
+<td id="objective"><p>This test case is intended to verify the following implied or specified requirements:</p>
+<ul id="requirementsList">
+<li>The GDO user interface shall have one button that will be used to command the door open or closed.</li><li>The GDO user interface shall display a momentary status message after the button is pressed that shall display the status of the command attempt.</li><li>The GDO user interface shall display a communication  failure message if it receives no response from the Raspberry PI 0 W within five seconds.</li><li>The user interface shall be implemented on an Android Device that supports bluetooth.</li><li>When the Android app is started a main page shall display as a minimum:</li><li>A text field that displays the status:</li><li>The app shall display a status of &quot;Ready&quot; when it is started.</li><li>The app shall display a status of &quot;Communication Failure&quot; when it fails to send a command or receive a response from the controller.</li><li>Display a command button.</li></ul>
+<p>During this test case, the garage door opener app will be started and the user will confirm that the display is correct when the Android device is not connected to the relay controller.</p></td>
+</tr>
+<tr>
+<td>
+Setup
+</td>
+<td>
+<ul id="setup">
+<li>If enabled, disable bluetooth on the Android device.</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Actions
+</td>
+<td>
+<ol id="actions">
+<li> Start the garage door opener Android app. </li><li> Verify that there is a status message display saying the app is ready to send a message. </li><li> Verify that there is one button that says it is for opening or closing (the door). </li><li> Press the open/close button. </li><li> Verify that the app displays a message saying that communication failed.</li></ol>
+</td>
+</tr>
+<tr>
+<td>
+Expected
+</td>
+<td id="expected">
+The app, when started, displays a ready status.  When the open/close button is pressed the app presents a &quot;processing&quot; message, and when the app receives no reply form the relay controller, the app presents a message indicating communication failure.</td>
+</tr>
+<tr>
+<td>
+Results
+</td>
+<td id="results">
+PASSED</td>
+</tr>
+<tr>
+<td>
+Cleanup
+</td>
+<td>
+<ul id="cleanup">
+<li></li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Requirements
+</td>
+<td id="requirements">
+GDO-UI-EXT-IF-010, GDO-UI-EXT-IF-020, GDO-UI-EXT-IF-020.003, GDO-PR-UI-010, GDO-PR-UI-020, GDO-PR-UI-020.001, GDO-PR-UI-020.001.001, GDO-PR-UI-020.001.002, GDO-PR-UI-020.002</td>
+</tr>
+</table>
+</body>
+</html>

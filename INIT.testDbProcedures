@@ -1,0 +1,6 @@
+INIT-0010
+/step Plug the controller into a power source.\step /step Verify that the garage door does not move\step 
+INIT-0020
+/step Select the GDO app on the Android device.\step /step Verify that a status appears indicating that the app is ready to communicate with the controller.\step /step Verify that an "OPEN/CLOSE" button appears.\step /step Press the button and verify that a communication failure is reported in the status field.\step 
+INIT-0030
+/step Using the Android interface, press the "OPEN/CLOSE" button.\step /step Verify that the the status message displays "Processing....".\step /step Verify that the status message then switches to either "Command Successful" or "Authentication Failure".\step 

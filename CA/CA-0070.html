@@ -1,0 +1,82 @@
+<?xml version="1.0" ?><html>
+<style>
+body { background-color: white; }
+body { font-family: sans-serif; }
+li { font-size: 80%; }
+</style>
+<body>
+<table BORDER="" WIDTH="90%">
+<tr>
+<td>
+Test Case
+</td>
+<td id="testCaseId">
+CA-0070</td>
+</tr>
+<tr>
+<td>
+Title
+</td>
+<td id="title">
+Free form Bytes Test - too few - one byte</td>
+</tr>
+<tr>
+<td>
+Objective
+</td>
+<td id="objective"><p>This test case is intended to verify the following implied or specified requirements:</p>
+<ul id="requirementsList">
+<li>The bluetooth server shall:</li><li>Apply an algorithm to assure the bytes are expected and have not been observed before.  This authenticates the client.</li></ul>
+<p>During this test case, only one byte will be sent and this is too short for authenticating.  Authentication should fail.</p></td>
+</tr>
+<tr>
+<td>
+Setup
+</td>
+<td>
+<ul id="setup">
+<li>55</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Actions
+</td>
+<td>
+<ol id="actions">
+<li> This test case will be executed using the GDO driver via the CA.driver file.  The byte stream shown in the setup section will be sent by the driver and should produce the expected results shown in the expected results section.</li></ol>
+</td>
+</tr>
+<tr>
+<td>
+Expected
+</td>
+<td id="expected">
+Authentication Failed</td>
+</tr>
+<tr>
+<td>
+Results
+</td>
+<td id="results">
+PASSED</td>
+</tr>
+<tr>
+<td>
+Cleanup
+</td>
+<td>
+<ul id="cleanup">
+<li></li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Requirements
+</td>
+<td id="requirements">
+GDO-PR-CONTROLLER-020, GDO-PR-CONTROLLER-020.004</td>
+</tr>
+</table>
+</body>
+</html>

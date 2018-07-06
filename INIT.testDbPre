@@ -1,0 +1,6 @@
+INIT-0010
+Connect the controller to the relay and the relay to the garage door opener.
+INIT-0020
+Bluetooth on Android device is disabled.
+INIT-0030
+Assumes test case INIT-0010 has been executed and that the controller is powered.

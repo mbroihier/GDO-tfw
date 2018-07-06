@@ -1,0 +1,82 @@
+<?xml version="1.0" ?><html>
+<style>
+body { background-color: white; }
+body { font-family: sans-serif; }
+li { font-size: 80%; }
+</style>
+<body>
+<table BORDER="" WIDTH="90%">
+<tr>
+<td>
+Test Case
+</td>
+<td id="testCaseId">
+INIT-0010</td>
+</tr>
+<tr>
+<td>
+Title
+</td>
+<td id="title">
+Power on Initialization of the Garage Door Controller does not move the garage door</td>
+</tr>
+<tr>
+<td>
+Objective
+</td>
+<td id="objective"><p>This test case is intended to verify the following implied or specified requirements:</p>
+<ul id="requirementsList">
+<li>After power application to the controller, the controller shall:</li><li>Start a bluetooth server.</li><li>If a power cycle occurs, the return of power itself shall leave the power relay open.  This will prevent the door from opening simply due to a power cycle.</li></ul>
+<p>By plugging in the controller to a power source and then confirming the garage door does not move, this test case will demonstrate that cycling power will not inadvertently open the garage door.</p></td>
+</tr>
+<tr>
+<td>
+Setup
+</td>
+<td>
+<ul id="setup">
+<li>Connect the controller to the relay and the relay to the garage door opener.</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Actions
+</td>
+<td>
+<ol id="actions">
+<li> Plug the controller into a power source. </li><li> Verify that the garage door does not move</li></ol>
+</td>
+</tr>
+<tr>
+<td>
+Expected
+</td>
+<td id="expected">
+When powered up, the controller will not command the garage door opener to do anything.</td>
+</tr>
+<tr>
+<td>
+Results
+</td>
+<td id="results">
+UNTESTED</td>
+</tr>
+<tr>
+<td>
+Cleanup
+</td>
+<td>
+<ul id="cleanup">
+<li></li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Requirements
+</td>
+<td id="requirements">
+GDO-PR-CONTROLLER-010, GDO-PR-CONTROLLER-010.002, GDO-PERF-030</td>
+</tr>
+</table>
+</body>
+</html>

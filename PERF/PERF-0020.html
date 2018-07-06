@@ -1,0 +1,82 @@
+<?xml version="1.0" ?><html>
+<style>
+body { background-color: white; }
+body { font-family: sans-serif; }
+li { font-size: 80%; }
+</style>
+<body>
+<table BORDER="" WIDTH="90%">
+<tr>
+<td>
+Test Case
+</td>
+<td id="testCaseId">
+PERF-0020</td>
+</tr>
+<tr>
+<td>
+Title
+</td>
+<td id="title">
+The garage door controller takes less than 1 minute to power up</td>
+</tr>
+<tr>
+<td>
+Objective
+</td>
+<td id="objective"><p>This test case is intended to verify the following implied or specified requirements:</p>
+<ul id="requirementsList">
+<li>Upon power loss, the controller shall take no longer than 1 minute to recover (able to accept a bluetooth remote commands) once power is again available.</li></ul>
+<p>This test case is intended to demonstrate that in situations where the Raspberry PI controller has to reboot (e.g. loss of power), it takes less than a minute to get to a state where it can accept a new bluetooth open/close command.</p></td>
+</tr>
+<tr>
+<td>
+Setup
+</td>
+<td>
+<ul id="setup">
+<li>Controller is initially plugged in.</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Actions
+</td>
+<td>
+<ol id="actions">
+<li> Confirm that the controller is able to open and close the garage door by pressing the open/close button on the Android app. </li><li> Pull the power connector from the Raspberry PI. </li><li> Wait 10 seconds and restore power. </li><li> Wait 60 seconds and then command the door state to change from the app. </li><li> Verify the door opens or closes. </li><li> Repeat step 2 to 5 10 times.</li></ol>
+</td>
+</tr>
+<tr>
+<td>
+Expected
+</td>
+<td id="expected">
+After a reboot, the Android app can send a door command that is successfully processed within 60 seconds.</td>
+</tr>
+<tr>
+<td>
+Results
+</td>
+<td id="results">
+FAILED</td>
+</tr>
+<tr>
+<td>
+Cleanup
+</td>
+<td>
+<ul id="cleanup">
+<li></li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Requirements
+</td>
+<td id="requirements">
+GDO-PERF-020</td>
+</tr>
+</table>
+</body>
+</html>

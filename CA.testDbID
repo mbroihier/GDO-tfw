@@ -1,0 +1,22 @@
+CA-0010
+A valid byte pattern
+CA-0020
+A second valid byte pattern
+CA-0030
+A third valid byte pattern, but it will have an extra byte
+CA-0040
+A fourth valid byte pattern, but it will have a missing byte from the end
+CA-0050
+A random byte pattern
+CA-0060
+A valid byte pattern after a large buffer overflow random set of bytes
+CA-0070
+Free form Bytes Test - too few - one byte
+CA-0080
+Free form Bytes Test - too few - two bytes
+CA-0090
+Free form Bytes Test - too few - three bytes
+CA-0100
+Free form Bytes Test - too few - four bytes
+CA-0110
+Free form Bytes Test - five bytes, bad pattern

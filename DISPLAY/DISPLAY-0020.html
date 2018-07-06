@@ -1,0 +1,82 @@
+<?xml version="1.0" ?><html>
+<style>
+body { background-color: white; }
+body { font-family: sans-serif; }
+li { font-size: 80%; }
+</style>
+<body>
+<table BORDER="" WIDTH="90%">
+<tr>
+<td>
+Test Case
+</td>
+<td id="testCaseId">
+DISPLAY-0020</td>
+</tr>
+<tr>
+<td>
+Title
+</td>
+<td id="title">
+Display of Authentication Failure</td>
+</tr>
+<tr>
+<td>
+Objective
+</td>
+<td id="objective"><p>This test case is intended to verify the following implied or specified requirements:</p>
+<ul id="requirementsList">
+<li>When the Android app is started a main page shall display as a minimum:</li><li>A text field that displays the status:</li><li>The app shall display a status of &quot;Authentication Failure&quot; when it fails to send a message considered valid by the controller.</li></ul>
+<p>The first time the controller is contacted, authentication is always failed.  This failure should be observable on the user interface.</p></td>
+</tr>
+<tr>
+<td>
+Setup
+</td>
+<td>
+<ul id="setup">
+<li>Cycle the controller power.</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Actions
+</td>
+<td>
+<ol id="actions">
+<li> Start the Android user interface. </li><li> Press the open/close button. </li><li> Verify that the status message says &quot;Processing...&quot; </li><li> Verify that the status message says &quot;Authentication Failure&quot;</li></ol>
+</td>
+</tr>
+<tr>
+<td>
+Expected
+</td>
+<td id="expected">
+The Android user interface display should display that authentication failed.</td>
+</tr>
+<tr>
+<td>
+Results
+</td>
+<td id="results">
+PASSED</td>
+</tr>
+<tr>
+<td>
+Cleanup
+</td>
+<td>
+<ul id="cleanup">
+<li></li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Requirements
+</td>
+<td id="requirements">
+GDO-PR-UI-020, GDO-PR-UI-020.001, GDO-PR-UI-020.001.004</td>
+</tr>
+</table>
+</body>
+</html>

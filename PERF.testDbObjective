@@ -1,0 +1,4 @@
+PERF-0010:GDO-PERF-010
+Given that the controller and user interface are up, the time from button push to status display update will be an acceptable interval less than five seconds.
+PERF-0020:GDO-PERF-020
+This test case is intended to demonstrate that in situations where the Raspberry PI controller has to reboot (e.g. loss of power), it takes less than a minute to get to a state where it can accept a new bluetooth open/close command.

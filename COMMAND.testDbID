@@ -1,0 +1,6 @@
+COMMAND-0010
+Pressing button opens door
+COMMAND-0020
+Pressing button closes door
+COMMAND-0030
+If the controller is off, the UI will display a communication error when the button is pressed

@@ -1,0 +1,4 @@
+PERF-0010
+When the button is displayed, the time interval from pressing the button to seeing the controller response will be less than 5 seconds.
+PERF-0020
+After a reboot, the Android app can send a door command that is successfully processed within 60 seconds.

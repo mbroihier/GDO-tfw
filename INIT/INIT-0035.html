@@ -1,0 +1,82 @@
+<?xml version="1.0" ?><html>
+<style>
+body { background-color: white; }
+body { font-family: sans-serif; }
+li { font-size: 80%; }
+</style>
+<body>
+<table BORDER="" WIDTH="90%">
+<tr>
+<td>
+Test Case
+</td>
+<td id="testCaseId">
+INIT-0035</td>
+</tr>
+<tr>
+<td>
+Title
+</td>
+<td id="title">
+Bluetooth Server is Started</td>
+</tr>
+<tr>
+<td>
+Objective
+</td>
+<td id="objective"><p>This test case is intended to verify the following implied or specified requirements:</p>
+<ul id="requirementsList">
+<li>After power application to the controller, the controller shall:</li><li>Initialize the push button connection to the garage door opener to open (no button pressed).</li></ul>
+<p>The successful execution of this test case will demonstrate that the controller implements a bluetooth server using the RFCOMM protocol and communicates to a client.</p></td>
+</tr>
+<tr>
+<td>
+Setup
+</td>
+<td>
+<ul id="setup">
+<li>Assumes test case INIT-0010 has been executed and that the controller is powered.</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Actions
+</td>
+<td>
+<ol id="actions">
+<li> Using the Android interface, press the &quot;OPEN/CLOSE&quot; button. </li><li> Verify that the the status message displays &quot;Processing....&quot;. </li><li> Verify that the status message then switches to either &quot;Command Successful&quot; or &quot;Authentication Failure&quot;.</li></ol>
+</td>
+</tr>
+<tr>
+<td>
+Expected
+</td>
+<td id="expected">
+A bluetooth RFCOMM server will be started that will respond to requests from a bluetooth RFCOMM client.</td>
+</tr>
+<tr>
+<td>
+Results
+</td>
+<td id="results">
+UNTESTED</td>
+</tr>
+<tr>
+<td>
+Cleanup
+</td>
+<td>
+<ul id="cleanup">
+<li></li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Requirements
+</td>
+<td id="requirements">
+GDO-PR-CONTROLLER-010, GDO-PR-CONTROLLER-010.001</td>
+</tr>
+</table>
+</body>
+</html>

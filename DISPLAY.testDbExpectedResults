@@ -1,0 +1,4 @@
+DISPLAY-0010
+The app, when started, displays a ready status.  When the open/close button is pressed the app presents a "processing" message, and when the app receives no reply form the relay controller, the app presents a message indicating communication failure.
+DISPLAY-0020
+The Android user interface display should display that authentication failed.

@@ -1,0 +1,6 @@
+COMMAND-0010
+Controller is up and operational./hrThe user interface is displaying the main menu with status field and command button./hrThe garage door is closed.
+COMMAND-0020
+Controller is up and operational./hrThe user interface is displaying the main menu with status field and command button./hrThe garage door is open.
+COMMAND-0030
+Log into the controller and power off the bluetooth device.

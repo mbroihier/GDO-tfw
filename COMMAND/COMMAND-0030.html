@@ -1,0 +1,82 @@
+<?xml version="1.0" ?><html>
+<style>
+body { background-color: white; }
+body { font-family: sans-serif; }
+li { font-size: 80%; }
+</style>
+<body>
+<table BORDER="" WIDTH="90%">
+<tr>
+<td>
+Test Case
+</td>
+<td id="testCaseId">
+COMMAND-0030</td>
+</tr>
+<tr>
+<td>
+Title
+</td>
+<td id="title">
+If the controller is off, the UI will display a communication error when the button is pressed</td>
+</tr>
+<tr>
+<td>
+Objective
+</td>
+<td id="objective"><p>This test case is intended to verify the following implied or specified requirements:</p>
+<ul id="requirementsList">
+<li>When the command button is pressed, the app shall:</li><li>Wait for and accept a controller reply.</li><li>If the reply is not received within an acceptable time, a Communication Error status message shall be displayed.</li></ul>
+<p>By having the controller off after running the last two test cases, this test case will demonstrate that the user interface will display a communication failure message because the controller will not be accessible.</p></td>
+</tr>
+<tr>
+<td>
+Setup
+</td>
+<td>
+<ul id="setup">
+<li>Log into the controller and power off the bluetooth device.</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Actions
+</td>
+<td>
+<ol id="actions">
+</ol>
+</td>
+</tr>
+<tr>
+<td>
+Expected
+</td>
+<td id="expected">
+The user interface status field will display &quot;Communication Failure&quot;.</td>
+</tr>
+<tr>
+<td>
+Results
+</td>
+<td id="results">
+UNTESTED</td>
+</tr>
+<tr>
+<td>
+Cleanup
+</td>
+<td>
+<ul id="cleanup">
+<li>Log into the controller and power on the bluetooth device.</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Requirements
+</td>
+<td id="requirements">
+GDO-PR-UI-030, GDO-PR-UI-030.003, GDO-PR-UI-030.003.002</td>
+</tr>
+</table>
+</body>
+</html>

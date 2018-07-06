@@ -1,0 +1,6 @@
+INIT-0010
+When powered up, the controller will not command the garage door opener to do anything.
+INIT-0020
+A status field and command button will exist.  When the command button is pressed when bluetooth is disabled on the Android device, a communication failure message will be displayed in the status field.
+INIT-0030
+A bluetooth RFCOMM server will be started that will respond to requests from a bluetooth RFCOMM client.

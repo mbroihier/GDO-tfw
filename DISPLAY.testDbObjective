@@ -1,0 +1,4 @@
+DISPLAY-0010:GDO-UI-EXT-IF-010, GDO-UI-EXT-IF-020, GDO-UI-EXT-IF-020.003, GDO-PR-UI-010, GDO-PR-UI-020, GDO-PR-UI-020.001, GDO-PR-UI-020.001.001, GDO-PR-UI-020.001.002, GDO-PR-UI-020.002
+During this test case, the garage door opener app will be started and the user will confirm that the display is correct when the Android device is not connected to the relay controller.
+DISPLAY-0020:GDO-PR-UI-020, GDO-PR-UI-020.001, GDO-PR-UI-020.001.004
+The first time the controller is contacted, authentication is always failed.  This failure should be observable on the user interface.

@@ -1,0 +1,82 @@
+<?xml version="1.0" ?><html>
+<style>
+body { background-color: white; }
+body { font-family: sans-serif; }
+li { font-size: 80%; }
+</style>
+<body>
+<table BORDER="" WIDTH="90%">
+<tr>
+<td>
+Test Case
+</td>
+<td id="testCaseId">
+COMMAND-0010</td>
+</tr>
+<tr>
+<td>
+Title
+</td>
+<td id="title">
+Pressing button opens door</td>
+</tr>
+<tr>
+<td>
+Objective
+</td>
+<td id="objective"><p>This test case is intended to verify the following implied or specified requirements:</p>
+<ul id="requirementsList">
+<li>When the Android app is started a main page shall display as a minimum:</li><li>A text field that displays the status:</li><li>The app shall display a status of &quot;Command Successful&quot; when it receives a successful indication from the controller.</li><li>When the command button is pressed, the app shall:</li><li>Open a bluetooth connection to the controller.</li><li>Send an authentication message to the controller.</li><li>Wait for and accept a controller reply.</li><li>The reply shall be displayed in the status field of the main menu.</li><li>Close the bluetooth connection to the controller.</li><li>The bluetooth server shall:</li><li>Accept a single client connection.</li><li>Accept a single byte stream from the client limiting the stream to a fixed maximum number of bytes.</li><li>Apply an algorithm to assure the bytes are expected and have not been observed before.  This authenticates the client.</li><li>If the client authenticates, close the push button connection to the garage door for a fixed number of seconds.</li><li>Send a reply of Command Successful if authentication was successful and Authentication Failure otherwise.</li><li>Close the client connection.</li><li>The GDO user interface shall display a momentary status message after the button is pressed that shall display the status of the command attempt.</li><li>The GDO user interface shall display a successful message if it receives a successful reply from the Raspberry PI 0 W.</li><li>The GDO command processor (Raspberry PI 0 W) shall have one GPIO pin dedicated to actuating a switch connected to an Overhead Door model 456.  This pin will be directly connected to the relay command pin.</li><li>The GDO command processor (Raspberry PI 0 W) shall have one GPIO pin dedicated to supplying power to a switch connected to an Overhead Door model 456.  This pin will be directly connected to the relay power pin.</li><li>The GDO command processor (Raspberry PI 0 W) shall have a ground GPIO pin directly connected to the relay ground/common.</li><li>A relay channel associated with the actuating control of GDO-PROC-EXT-IF-010 shall have one terminal connected to the Overhead Door electrical connector identified as &quot;PUSHBUTTON&quot;.</li><li>A relay channel associated with the actuating control of GDO-PROC-EXT-IF-010 shall have another terminal connected to the Overhead Door electrical connector identified as &quot;COMMON&quot;.</li></ul>
+<p>Given that the controller and user interface are up, pressing the open/close button when the door is closed, opens the door.  This simple test case confirms the external interfaces between the Android device and Raspberry PI 0 W controller, the interfaces between the controller and the relay, and between the relay and the garage door opener.  Without these properly connected interfaces, the door will not open.</p></td>
+</tr>
+<tr>
+<td>
+Setup
+</td>
+<td>
+<ul id="setup">
+<li>Controller is up and operational.</li><li>The user interface is displaying the main menu with status field and command button.</li><li>The garage door is closed.</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Actions
+</td>
+<td>
+<ol id="actions">
+<li> From the Android user interface device, press the &quot;OPEN/CLOSE&quot; button. </li><li> Verify that the Android user display presents a momentary message indicating that the command is being processed. </li><li> Verify that the Android user display indicates that the command was successful. </li><li> Verify that the door opens.</li></ol>
+</td>
+</tr>
+<tr>
+<td>
+Expected
+</td>
+<td id="expected">
+A closed garage door will open</td>
+</tr>
+<tr>
+<td>
+Results
+</td>
+<td id="results">
+UNTESTED</td>
+</tr>
+<tr>
+<td>
+Cleanup
+</td>
+<td>
+<ul id="cleanup">
+<li></li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Requirements
+</td>
+<td id="requirements">
+GDO-PR-UI-020, GDO-PR-UI-020.001, GDO-PR-UI-020.001.003, GDO-PR-UI-030, GDO-PR-UI-030.001, GDO-PR-UI-030.002, GDO-PR-UI-030.003, GDO-PR-UI-030.003.001, GDO-PR-UI-030.004, GDO-PR-CONTROLLER-020, GDO-PR-CONTROLLER-020.001, GDO-PR-CONTROLLER-020.002, GDO-PR-CONTROLLER-020.004, GDO-PR-CONTROLLER-020.005, GDO-PR-CONTROLLER-020.006, GDO-PR-CONTROLLER-020.007, GDO-UI-EXT-IF-020, GDO-UI-EXT-IF-020.001, GDO-PROC-EXT-IF-010, GDO-PROC-EXT-IF-020, GDO-PROC-EXT-IF-030, GDO-RELAY-EXT-IF-010, GDO-RELAY-EXT-IF-020</td>
+</tr>
+</table>
+</body>
+</html>

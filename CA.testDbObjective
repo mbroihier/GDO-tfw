@@ -1,0 +1,22 @@
+CA-0010: GDO-PR-CONTROLLER-020,GDO-PR-CONTROLLER-020.004
+ During this test case, a valid byte sequence will be sent.  Authentication will fail because this is the first contact with the controller that has not yet built a lock.
+CA-0020: GDO-PR-CONTROLLER-020, GDO-PR-CONTROLLER-020.004
+ During this test case, a valid byte sequence will be sent.  Authentication will be successful.
+CA-0030: GDO-PR-CONTROLLER-020, GDO-PR-CONTROLLER-020.003
+ During this test case, a valid byte sequence will be sent but then there will be an extra random byte.  Authentication will fail.
+CA-0040: GDO-PR-CONTROLLER-020, GDO-PR-CONTROLLER-020.004
+ During this test case, a valid byte sequence will be sent but then there will be a missing byte.  Authentication will fail.
+CA-0050: GDO-PR-CONTROLLER-020, GDO-PR-CONTROLLER-020.003
+ During this test case, a random byte sequence will be sent.  Authentication will fail.
+CA-0060: GDO-PR-CONTROLLER-020, GDO-PR-CONTROLLER-020.004
+ During this test case, a valid byte sequence will be sent.  Authentication will be successful.
+CA-0070: GDO-PR-CONTROLLER-020, GDO-PR-CONTROLLER-020.004
+ During this test case, only one byte will be sent and this is too short for authenticating.  Authentication should fail.
+CA-0080: GDO-PR-CONTROLLER-020, GDO-PR-CONTROLLER-020.004
+ During this test case, only two bytes will be sent and this is too short for authenticating.  Authentication should fail.
+CA-0090: GDO-PR-CONTROLLER-020, GDO-PR-CONTROLLER-020.004
+ During this test case, only three bytes will be sent and this is too short for authenticating.  Authentication should fail.
+CA-0100: GDO-PR-CONTROLLER-020, GDO-PR-CONTROLLER-020.004
+ During this test case, only four bytes will be sent and this is too short for authenticating.  Authentication should fail.
+CA-0110: GDO-PR-CONTROLLER-020, GDO-PR-CONTROLLER-020.004
+ During this test case, five bytes will be sent that will not be the proper pattern.  Authentication should fail.

@@ -1,0 +1,82 @@
+<?xml version="1.0" ?><html>
+<style>
+body { background-color: white; }
+body { font-family: sans-serif; }
+li { font-size: 80%; }
+</style>
+<body>
+<table BORDER="" WIDTH="90%">
+<tr>
+<td>
+Test Case
+</td>
+<td id="testCaseId">
+INIT-0020</td>
+</tr>
+<tr>
+<td>
+Title
+</td>
+<td id="title">
+UI Initialization</td>
+</tr>
+<tr>
+<td>
+Objective
+</td>
+<td id="objective"><p>This test case is intended to verify the following implied or specified requirements:</p>
+<ul id="requirementsList">
+<li>The GDO user interface shall have one button that will be used to command the door open or closed.</li><li>The GDO user interface shall display a momentary status message after the button is pressed that shall display the status of the command attempt.</li><li>The GDO user interface shall display an authentication failure message if it receives an authentication failure response from the Raspberry PI 0 W.</li></ul>
+<p>Successful execution of this test case verifies that the user interface displayed on the Android device has the expected fields and buttons.</p></td>
+</tr>
+<tr>
+<td>
+Setup
+</td>
+<td>
+<ul id="setup">
+<li>Bluetooth on Android device is disabled.</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Actions
+</td>
+<td>
+<ol id="actions">
+<li> Select the GDO app on the Android device. </li><li> Verify that a status appears indicating that the app is ready to communicate with the controller. </li><li> Verify that an &quot;OPEN/CLOSE&quot; button appears. </li><li> Press the button and verify that a communication failure is reported in the status field.</li></ol>
+</td>
+</tr>
+<tr>
+<td>
+Expected
+</td>
+<td id="expected">
+A status field and command button will exist.  When the command button is pressed when bluetooth is disabled on the Android device, a communication failure message will be displayed in the status field.</td>
+</tr>
+<tr>
+<td>
+Results
+</td>
+<td id="results">
+PASSED</td>
+</tr>
+<tr>
+<td>
+Cleanup
+</td>
+<td>
+<ul id="cleanup">
+<li></li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Requirements
+</td>
+<td id="requirements">
+GDO-UI-EXT-IF-010, GDO-UI-EXT-IF-020, GDO-UI-EXT-IF-020.002</td>
+</tr>
+</table>
+</body>
+</html>

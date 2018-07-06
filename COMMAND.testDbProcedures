@@ -1,0 +1,6 @@
+COMMAND-0010
+/step From the Android user interface device, press the "OPEN/CLOSE" button.\step /step Verify that the Android user display presents a momentary message indicating that the command is being processed.\step /step Verify that the Android user display indicates that the command was successful.\step /step Verify that the door opens.\step 
+COMMAND-0020
+/step From the Android user interface device, press the "OPEN/CLOSE" button.\step /step Verify that the Android user display presents a momentary message indicating that the command is being processed.\step /step Verify that the Android user display indicates that the command was successful.\step /step Verify that the door closes.\step 
+COMMAND-0030
+

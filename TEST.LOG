@@ -1,0 +1,158 @@
+ID:EXPECTED PROGRESS
+7/2/2018 15
+7/3/2018 18
+7/4/2018 19
+7/5/2018 20
+7/6/2018 21
+7/7/2018 21
+7/8/2018 21
+ID:INIT-0020
+Test Start Time: 7/2/2018 10:34 CDT
+Log data:
+Started App.  Main screen displayed "ready" and open/close button.
+Results: PASSED
+Test End Time: 7/2/2018 10:36 CDT
+Tester: Mark Broihier
+ID:INIT-0030
+Test Start Time: 7/2/2018 10:42 CDT
+Log data:
+Enabled bluetooth on Android 6P device. Entered GDO app and pressed open close button.  Said processing and then communication failure.  Second attempt worked.
+Results: FAILED
+Test End Time: 7/2/2018 10:45 CDT
+Tester: Mark Broihier
+ID:DISPLAY-0010
+Test Start Time: 7/2/2018 10:58 CDT
+Log data:
+Disabled bluetooth on Android.  Opened app, saw ready and push button.  Pressed button.  Saw processing message and then Communication failure.
+Results: PASSED
+Test End Time: 7/2/2018 11:02 CDT
+Tester: Mark Broihier
+ID:DISPLAY-0020
+Test Start Time: 7/2/2018 11:14 CDT
+Log data:
+Pulled power from the Raspberry PI 0 W, rpi3.  Waited for it to recover.  Enabled bluetooth on Android device.  Entered App and pressed open/close button.  Saw "Authentication Failed" message.
+Results: PASSED
+Test End Time: 7/2/2018 11:16 CDT
+Tester: Mark Broihier
+ID:CA-0010
+Test Start Time: 7/2/2018 11:27 CDT
+Log data:
+Ran CA.driver on rpi2 with it talking to rpi3.  All test cases reported passed.  This test case records the time started and completion time.
+Results: PASSED
+Test End Time: 7/2/2018 11:32 CDT
+Tester: Mark Broihier
+ID:CA-0020
+Test Start Time: 7/2/2018 11:33 CDT
+Log data:
+see CA-0010
+Results: PASSED
+Test End Time: 7/2/2018 11:33 CDT
+Tester: Mark Broihier
+ID:CA-0030
+Test Start Time: 7/2/2018 11:33 CDT
+Log data:
+see CA-0010
+Results: PASSED
+Test End Time: 7/2/2018 11:33 CDT
+Tester: Mark Broihier
+ID:CA-0030
+Test Start Time: 7/2/2018 11:34 CDT
+Log data:
+see CA-0010
+Results: PASSED
+Test End Time: 7/2/2018 11:34 CDT
+Tester: Mark Broihier
+ID:CA-0040
+Test Start Time: 7/2/2018 11:34 CDT
+Log data:
+see CA-0010
+Results: PASSED
+Test End Time: 7/2/2018 11:34 CDT
+Tester: Mark Broihier
+ID:CA-0050
+Test Start Time: 7/2/2018 11:35 CDT
+Log data:
+see CA-0010
+Results: PASSED
+Test End Time: 7/2/2018 11:35 CDT
+Tester: Mark Broihier
+ID:CA-0060
+Test Start Time: 7/2/2018 11:35 CDT
+Log data:
+see CA-0010
+Results: PASSED
+Test End Time: 7/2/2018 11:35 CDT
+Tester: Mark Broihier
+ID:CA-0070
+Test Start Time: 7/2/2018 11:35 CDT
+Log data:
+see CA-0010
+Results: PASSED
+Test End Time: 7/2/2018 11:36 CDT
+Tester: Mark Broihier
+ID:CA-0080
+Test Start Time: 7/2/2018 11:36 CDT
+Log data:
+see CA-0010
+Results: PASSED
+Test End Time: 7/2/2018 11:36 CDT
+Tester: Mark Broihier
+ID:CA-0090
+Test Start Time: 7/2/2018 11:36 CDT
+Log data:
+see CA-0010
+Results: PASSED
+Test End Time: 7/2/2018 11:37 CDT
+Tester: Mark Broihier
+ID:CA-0100
+Test Start Time: 7/2/2018 11:37 CDT
+Log data:
+see CA-0010
+Results: PASSED
+Test End Time: 7/2/2018 11:37 CDT
+Tester: Mark Broihier
+ID:CA-0110
+Test Start Time: 7/2/2018 11:37 CDT
+Log data:
+see CA-0010
+Results: PASSED
+Test End Time: 7/2/2018 11:38 CDT
+Tester: Mark Broihier
+ID:PERF-0010
+Test Start Time: 7/3/2018 16:54 CDT
+Log data:
+Trail 1: 5 sec
+Trail 2: 5 sec
+Trail 3: 5 sec
+Trial 4: 8 sec
+Trial 5: 5 sec
+Trial 6: 5 sec
+Trial 7: 6 sec
+Trial 8: 6 sec
+Trail 9: 7 sec
+Trail 10: 5 sec
+
+Most trials were 5 seconds, but clearly did not meet the requirement.
+Results: FAILED
+Test End Time: 7/3/2018 17:03 CDT
+Tester: Mark Broihier
+ID:PERF-0020
+Test Start Time: 7/3/2018 17:05 CDT
+Log data:
+Variation of the test - in this case, I tested with a controller not attached to an actual garage door.  This is not a full test because no door is physically changing state, but it is testing the boot response of the PI.  In this case I do a shutdown -r now and start a timer.  After 60 seconds I send the command - it should say Authentication Failed.  The next command should then succeed.
+
+Trial 1: Authentication Failed then Passed
+Trial 2: Communication Failed
+Trail 3: Authentication Failed then Passed
+Trial 4: Communication Failed
+Trial 5: Authentication Failed then Passed
+Trial 6: Authentication Failed then Passed
+Trial 7: Communication Failed
+Trail 8: Communication Failed
+Trial 9: Communication Failed
+Trial 10: Authentication Failed then Passed
+
+50% of the time, 1 minute was not long enough to recover from a reboot.
+Results: FAILED
+Test End Time: 7/3/2018 17:32 CDT
+Tester: Mark Broihier

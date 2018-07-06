@@ -1,0 +1,6 @@
+INIT-0010:GDO-PR-CONTROLLER-010, GDO-PR-CONTROLLER-010.002, GDO-PERF-030
+By plugging in the controller to a power source and then confirming the garage door does not move, this test case will demonstrate that cycling power will not inadvertently open the garage door.
+INIT-0020:GDO-UI-EXT-IF-010, GDO-UI-EXT-IF-020, GDO-UI-EXT-IF-020.002
+Successful execution of this test case verifies that the user interface displayed on the Android device has the expected fields and buttons.
+INIT-0030:GDO-PR-CONTROLLER-010, GDO-PR-CONTROLLER-010.001
+The successful execution of this test case will demonstrate that the controller implements a bluetooth server using the RFCOMM protocol and communicates to a client.

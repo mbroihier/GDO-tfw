@@ -1,0 +1,82 @@
+GDO-UI-EXT-IF-010
+The GDO user interface shall have one button that will be used to command the door open or closed.
+GDO-UI-EXT-IF-020
+The GDO user interface shall display a momentary status message after the button is pressed that shall display the status of the command attempt.
+GDO-UI-EXT-IF-020.001
+ The GDO user interface shall display a successful message if it receives a successful reply from the Raspberry PI 0 W.
+GDO-UI-EXT-IF-020.002
+ The GDO user interface shall display an authentication failure message if it receives an authentication failure response from the Raspberry PI 0 W.
+GDO-UI-EXT-IF-020.003
+ The GDO user interface shall display a communication  failure message if it receives no response from the Raspberry PI 0 W within five seconds.
+GDO-PROC-EXT-IF-010
+The GDO command processor (Raspberry PI 0 W) shall have one GPIO pin dedicated to actuating a switch connected to an Overhead Door model 456.  This pin will be directly connected to the relay command pin.
+GDO-PROC-EXT-IF-020
+The GDO command processor (Raspberry PI 0 W) shall have one GPIO pin dedicated to supplying power to a switch connected to an Overhead Door model 456.  This pin will be directly connected to the relay power pin.
+GDO-PROC-EXT-IF-030
+The GDO command processor (Raspberry PI 0 W) shall have a ground GPIO pin directly connected to the relay ground/common.
+GDO-RELAY-EXT-IF-010
+A relay channel associated with the actuating control of GDO-PROC-EXT-IF-010 shall have one terminal connected to the Overhead Door electrical connector identified as “PUSHBUTTON”.
+GDO-RELAY-EXT-IF-020
+A relay channel associated with the actuating control of GDO-PROC-EXT-IF-010 shall have another terminal connected to the Overhead Door electrical connector identified as “COMMON”.
+GDO-PR-UI-010
+The user interface shall be implemented on an Android Device that supports bluetooth.
+GDO-PR-UI-020
+When the Android app is started a main page shall display as a minimum:
+GDO-PR-UI-020.001
+A text field that displays the status:  
+GDO-PR-UI-020.001.001
+The app shall display a status of “Ready” when it is started.
+GDO-PR-UI-020.001.002
+The app shall display a status of “Communication Failure” when it fails to send a command or receive a response from the controller.
+GDO-PR-UI-020.001.003
+The app shall display a status of “Command Successful” when it receives a successful indication from the controller.
+GDO-PR-UI-020.001.004
+The app shall display a status of “Authentication Failure” when it fails to send a message considered valid by the controller.
+GDO-PR-UI-020.002
+ Display a command button.
+GDO-PR-UI-030
+When the command button is pressed, the app shall:
+GDO-PR-UI-030.001
+Open a bluetooth connection to the controller.  
+GDO-PR-UI-030.002
+Send an authentication message to the controller.  
+GDO-PR-UI-030.003
+Wait for and accept a controller reply.
+GDO-PR-UI-030.003.001
+The reply shall be displayed in the status field of the main menu.
+GDO-PR-UI-030.003.002
+If the reply is not received within an acceptable time, a Communication Error status message shall be displayed.    
+GDO-PR-UI-030.004
+Close the bluetooth connection to the controller.
+GDO-PR-CONTROLLER-010
+After power application to the controller, the controller shall:
+GDO-PR-CONTROLLER-010.001
+Initialize the push button connection to the garage door opener to open (no button pressed).  
+GDO-PR-CONTROLLER-010.002
+Start a bluetooth server.  
+GDO-PR-CONTROLLER-020
+The bluetooth server shall:
+GDO-PR-CONTROLLER-020.001
+Accept a single client connection.  
+GDO-PR-CONTROLLER-020.002
+Accept a single byte stream from the client limiting the stream to a fixed maximum number of bytes.
+GDO-PR-CONTROLLER-020.003
+If more bytes are available, that is considered an authentication failure.  
+GDO-PR-CONTROLLER-020.004
+Apply an algorithm to assure the bytes are expected and have not been observed before.  This authenticates the client.
+GDO-PR-CONTROLLER-020.005
+If the client authenticates, close the push button connection to the garage door for a fixed number of seconds.
+GDO-PR-CONTROLLER-020.006
+Send a reply of Command Successful if authentication was successful and Authentication Failure otherwise.  
+GDO-PR-CONTROLLER-020.007
+Close the client connection.
+GDO-PROV-010
+The bluetooth connection shall be manually provisioned via Java code in the Android App and/or Android OS.
+GDO-PROV-020
+The bluetooth connection shall be manually provisioned via code in the controller program and/or Linux OS.
+GDO-PERF-010
+  From button press to status display update shall take no longer than 5 seconds.
+GDO-PERF-020
+ Upon power loss, the controller shall take no longer than 1 minute to recover (able to accept a bluetooth remote commands) once power is again available.
+GDO-PERF-030
+ If a power cycle occurs, the return of power itself shall leave the power relay open.  This will prevent the door from opening simply due to a power cycle.

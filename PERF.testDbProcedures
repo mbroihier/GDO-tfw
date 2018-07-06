@@ -1,0 +1,4 @@
+PERF-0010
+/step From the Android user interface device, press the "OPEN/CLOSE" button.\step /step Verify that the time it takes from button press to the status update is less than 5 seconds.\step /step Repeat this for a total of 10 trials.\step 
+PERF-0020
+/step Confirm that the controller is able to open and close the garage door by pressing the open/close button on the Android app.\step /step Pull the power connector from the Raspberry PI.\step /step Wait 10 seconds and restore power.\step /step Wait 60 seconds and then command the door state to change from the app.\step /step Verify the door opens or closes.\step /step Repeat step 2 to 5 10 times.\step 

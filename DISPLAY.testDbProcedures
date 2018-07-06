@@ -1,0 +1,4 @@
+DISPLAY-0010
+/step Start the garage door opener Android app.\step /step Verify that there is a status message display saying the app is ready to send a message.\step /step Verify that there is one button that says it is for opening or closing (the door).\step /step Press the open/close button.\step /step Verify that the app displays a message saying that communication failed.\step 
+DISPLAY-0020
+/step Start the Android user interface.\step /step Press the open/close button.\step /step Verify that the status message says "Processing..."\step /step Verify that the status message says "Authentication Failure"\step 
