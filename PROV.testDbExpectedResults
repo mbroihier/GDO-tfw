@@ -1,0 +1,4 @@
+PROV-0010
+Provisioning is hardcoded in the UI and bluetooth pairing must be done using Android configuration routines.
+PROV-0020
+Provisioning is hardcoded in the controller and bluetooth pairing must be done using Linux bluetooth commands.

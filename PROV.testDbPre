@@ -1,0 +1,4 @@
+PROV-0010
+If the Android device is paired with the controller, instruct it to forget the pairing.
+PROV-0020
+If the controller is paired with the UI, instruct it to forget the pairing.

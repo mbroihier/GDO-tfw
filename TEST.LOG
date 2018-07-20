@@ -6,6 +6,19 @@ ID:EXPECTED PROGRESS
 7/6/2018 21
 7/7/2018 21
 7/8/2018 21
+7/9/2018 21
+7/10/2018 21
+7/11/2018 21
+7/12/2018 21
+7/13/2018 21
+7/14/2018 22
+7/15/2018 22
+7/16/2018 22
+7/17/2018 22
+7/18/2018 22
+7/19/2018 22
+7/20/2018 22
+7/21/2018 22
 ID:INIT-0020
 Test Start Time: 7/2/2018 10:34 CDT
 Log data:
@@ -155,4 +168,53 @@ Trial 10: Authentication Failed then Passed
 50% of the time, 1 minute was not long enough to recover from a reboot.
 Results: FAILED
 Test End Time: 7/3/2018 17:32 CDT
+Tester: Mark Broihier
+ID:COMMAND-0010
+Test Start Time: 7/20/2018 08:29 CDT
+Log data:
+Door opened
+Results: PASSED
+Test End Time: 7/20/2018 08:29 CDT
+Tester: Mark Broihier
+ID:COMMAND-0020
+Test Start Time: 7/20/2018 08:30 CDT
+Log data:
+Door Closed
+Results: PASSED
+Test End Time: 7/20/2018 08:30 CDT
+Tester: Mark Broihier
+ID:COMMAND-0030
+Test Start Time: 7/20/2018 08:32 CDT
+Log data:
+Powered off bluetooth in controller.  Pressed open/close in the UI and received a "Communication Failed" message
+Results: PASSED
+Test End Time: 7/20/2018 08:32 CDT
+Tester: Mark Broihier
+ID:PROV-0010
+Test Start Time: 7/20/2018 08:39 CDT
+Log data:
+UI and controller both setup for UUID 00000003-0000-1000-8000-00805f9b34fb.  The node of the controller is rpi3 and UI looks for rpi3 to set the "device" in the Key object.  Forgot rpi3 on the UI, turned on discovery and agent on the controller.  On the Android device I paired with rpi3 and then ran the GDO UI successfully.
+Results: PASSED
+Test End Time: 7/20/2018 08:54 CDT
+Tester: Mark Broihier
+ID:PROV-0020
+Test Start Time: 7/20/2018 08:56 CDT
+Log data:
+Server is advertising the service RFCOMM (UUID 00000003...).  Tried a variation of the procedure and found that I should really be turning pairable to off and I'm no longer certain I need agent.  Once paired, however, communication to the controller worked. Need to change these procedures to turn on/off pairable.
+Results: FAILED
+Test End Time: 7/20/2018 09:08 CDT
+Tester: Mark Broihier
+ID:PROV-0010
+Test Start Time: 7/20/2018 09:23 CDT
+Log data:
+Reran with new procedure change due to test case execution of PROV-0020.
+Results: PASSED
+Test End Time: 7/20/2018 09:33 CDT
+Tester: Mark Broihier
+ID:PROV-0020
+Test Start Time: 7/20/2018 09:34 CDT
+Log data:
+Reran test with new procedure.
+Results: PASSED
+Test End Time: 7/20/2018 09:39 CDT
 Tester: Mark Broihier

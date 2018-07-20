@@ -1,0 +1,82 @@
+<?xml version="1.0" ?><html>
+<style>
+body { background-color: white; }
+body { font-family: sans-serif; }
+li { font-size: 80%; }
+</style>
+<body>
+<table BORDER="" WIDTH="90%">
+<tr>
+<td>
+Test Case
+</td>
+<td id="testCaseId">
+PROV-0010</td>
+</tr>
+<tr>
+<td>
+Title
+</td>
+<td id="title">
+Android UI is not automatically provisioned</td>
+</tr>
+<tr>
+<td>
+Objective
+</td>
+<td id="objective"><p>This test case is intended to verify the following implied or specified requirements:</p>
+<ul id="requirementsList">
+<li>The bluetooth connection shall be manually provisioned via Java code in the Android App and/or Android OS.</li></ul>
+<p>To improve security, this code requires hand configuration.  That is, it requires code modifications requiring the user to compile in some configuration information and hand configure other parts of the configuration.  This test focuses on the user interface.</p></td>
+</tr>
+<tr>
+<td>
+Setup
+</td>
+<td>
+<ul id="setup">
+<li>If the Android device is paired with the controller, instruct it to forget the pairing.</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Actions
+</td>
+<td>
+<ol id="actions">
+<li> Inspect the UI code and verify that sets the service ID to the same service ID that is set in the controller code and verify that the UI code looks for the node name given to the controller. </li><li> On the controller, enable bluetooth discovery and start the agent.<ul><li type="square"> sudo bluetoothctl \bullet </li><li type="square"> discoverable on \bullet </li><li type="square"> agent on \bullet </li><li type="square"> pairable on \bullet </li><li type="square"> On the Android device, turn bluetooth on and pair with the controller node. \bullet </li><li type="square"> Turn off discovery, pairing, and agent on the controller. \bullet </li><li type="square"> Exit bluetoothctl with &lt;control&gt; d \bullet\step </li></ul></li><li> Start the app on the Android device. </li><li> Press the open close button and confirm that no communication error occurs</li></ol>
+</td>
+</tr>
+<tr>
+<td>
+Expected
+</td>
+<td id="expected">
+Provisioning is hardcoded in the UI and bluetooth pairing must be done using Android configuration routines.</td>
+</tr>
+<tr>
+<td>
+Results
+</td>
+<td id="results">
+PASSED</td>
+</tr>
+<tr>
+<td>
+Cleanup
+</td>
+<td>
+<ul id="cleanup">
+<li></li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Requirements
+</td>
+<td id="requirements">
+GDO-PROV-010</td>
+</tr>
+</table>
+</body>
+</html>

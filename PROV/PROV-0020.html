@@ -1,0 +1,82 @@
+<?xml version="1.0" ?><html>
+<style>
+body { background-color: white; }
+body { font-family: sans-serif; }
+li { font-size: 80%; }
+</style>
+<body>
+<table BORDER="" WIDTH="90%">
+<tr>
+<td>
+Test Case
+</td>
+<td id="testCaseId">
+PROV-0020</td>
+</tr>
+<tr>
+<td>
+Title
+</td>
+<td id="title">
+Controller is not automatically provisioned</td>
+</tr>
+<tr>
+<td>
+Objective
+</td>
+<td id="objective"><p>This test case is intended to verify the following implied or specified requirements:</p>
+<ul id="requirementsList">
+<li>The bluetooth connection shall be manually provisioned via code in the controller program and/or Linux OS.</li></ul>
+<p>To improve security, this code requires hand configuration.  That is, it requires code modifications requiring the user to compile in some configuration information and hand configure other parts of the configuration.  This test focuses on the controller.</p></td>
+</tr>
+<tr>
+<td>
+Setup
+</td>
+<td>
+<ul id="setup">
+<li>If the controller is paired with the UI, instruct it to forget the pairing.</li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Actions
+</td>
+<td>
+<ol id="actions">
+<li> Inspect the controller code and verify that there is an &quot;advertise_service&quot; command that advertises a UUID that matches the UUID in the Android UI app. </li><li> Pair the controller with the app: <ul><li type="square"> sudo bluetoothctl \bullet </li><li type="square"> discoverable on \bullet </li><li type="square"> agent on \bullet </li><li type="square"> pairable on \bullet </li><li type="square"> on Android device, turn bluetooth on and pair with the node the controller is running on \bullet </li><li type="square"> turn off discovery, pairing, and agent on the controller. \bullet </li><li type="square"> &lt;control&gt; d to exit bluetoothctl \bullet\step </li></ul></li><li> Start UI app on the android device. </li><li> Press the open close button. </li><li> Verify that there was no communication failure.</li></ol>
+</td>
+</tr>
+<tr>
+<td>
+Expected
+</td>
+<td id="expected">
+Provisioning is hardcoded in the controller and bluetooth pairing must be done using Linux bluetooth commands.</td>
+</tr>
+<tr>
+<td>
+Results
+</td>
+<td id="results">
+PASSED</td>
+</tr>
+<tr>
+<td>
+Cleanup
+</td>
+<td>
+<ul id="cleanup">
+<li></li></ul>
+</td>
+</tr>
+<tr>
+<td>
+Requirements
+</td>
+<td id="requirements">
+GDO-PROV-020</td>
+</tr>
+</table>
+</body>
+</html>

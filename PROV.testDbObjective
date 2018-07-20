@@ -1,0 +1,4 @@
+PROV-0010:GDO-PROV-010
+To improve security, this code requires hand configuration.  That is, it requires code modifications requiring the user to compile in some configuration information and hand configure other parts of the configuration.  This test focuses on the user interface.
+PROV-0020:GDO-PROV-020
+To improve security, this code requires hand configuration.  That is, it requires code modifications requiring the user to compile in some configuration information and hand configure other parts of the configuration.  This test focuses on the controller.
